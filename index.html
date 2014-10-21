@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script type="text/javascript" src='searcher.js'></script>
+</head>
+<body ng-app="searcher-app">
+    <div class="row" ng-controller="mainCtrl">
+        <form class="" id="myForm" ng-submit="submitted=true; submit();" novalidate>
+            <input type='text' ng-data="search_term" placeholder="Enter your search term" required>
+            <button value="submit">submit</button>
+        </form>
+    </div>
+    {{search_term}}
+</body>
+</html>
